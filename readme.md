@@ -5,3 +5,9 @@ In this project, I utilized Python to explore data related to bike share systems
 to run program please click here
 
 https://cuddly-space-potato-557549xvxgpc44wr.github.dev/
+
+Once in, please type the following in the terminal.
+
+python bikeshare.py
+
+to exit press ctl + c
