@@ -168,9 +168,9 @@ def load_month():
     """load data file into a dataframe"""
 
     if city.lower() != "new york city":
-        df = pd.read_csv("./{}.csv".format(city.lower()))
+        df = pd.read_csv("./datasets/{}.csv".format(city.lower()))
     else:
-        df = pd.read_csv("./new_york_city.csv")
+        df = pd.read_csv("./datasets/new_york_city.csv")
 
     """convert the Start Time column to datetime"""
 
@@ -217,9 +217,9 @@ def load_day():
 
     """load data file into a dataframe"""
     if city.lower() != "new york city":
-        df = pd.read_csv("./{}.csv".format(city.lower()))
+        df = pd.read_csv("./datasets/{}.csv".format(city.lower()))
     else:
-        df = pd.read_csv("./new_york_city.csv")
+        df = pd.read_csv("./datasets/new_york_city.csv")
 
 
     """ convert the Start Time column to datetime"""
@@ -261,9 +261,9 @@ def load_both_df(city, month, day):
     """ load data file into a dataframe"""
 
     if city.lower() != "new york city":
-        df = pd.read_csv("./{}.csv".format(city.lower()))
+        df = pd.read_csv("./datasets/{}.csv".format(city.lower()))
     else:
-        df = pd.read_csv("./new_york_city.csv")
+        df = pd.read_csv("./datasets/new_york_city.csv")
 
     """ convert the Start Time column to datetime"""
     df['Start Time'] = pd.to_datetime(df['Start Time'])
